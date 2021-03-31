@@ -1,0 +1,7 @@
+C:\Users\vanes\Source\Repos\SOCPACxASU\DashboardService\bin\DashboardService.dll.config
+C:\Users\vanes\Source\Repos\SOCPACxASU\DashboardService\bin\DashboardService.dll
+C:\Users\vanes\Source\Repos\SOCPACxASU\DashboardService\bin\DashboardService.pdb
+C:\Users\vanes\Source\Repos\SOCPACxASU\DashboardService\obj\Debug\DashboardService.csprojAssemblyReference.cache
+C:\Users\vanes\Source\Repos\SOCPACxASU\DashboardService\obj\Debug\DashboardService.csproj.CoreCompileInputs.cache
+C:\Users\vanes\Source\Repos\SOCPACxASU\DashboardService\obj\Debug\DashboardService.dll
+C:\Users\vanes\Source\Repos\SOCPACxASU\DashboardService\obj\Debug\DashboardService.pdb

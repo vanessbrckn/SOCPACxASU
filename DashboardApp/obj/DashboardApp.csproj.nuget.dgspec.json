@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vanes\\source\\repos\\DashboardService\\DashboardApp\\DashboardApp.csproj": {}
+    "C:\\Users\\vanes\\Source\\Repos\\SOCPACxASU\\DashboardApp\\DashboardApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vanes\\source\\repos\\DashboardService\\DashboardApp\\DashboardApp.csproj": {
+    "C:\\Users\\vanes\\Source\\Repos\\SOCPACxASU\\DashboardApp\\DashboardApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vanes\\source\\repos\\DashboardService\\DashboardApp\\DashboardApp.csproj",
+        "projectUniqueName": "C:\\Users\\vanes\\Source\\Repos\\SOCPACxASU\\DashboardApp\\DashboardApp.csproj",
         "projectName": "DashboardApp",
-        "projectPath": "C:\\Users\\vanes\\source\\repos\\DashboardService\\DashboardApp\\DashboardApp.csproj",
+        "projectPath": "C:\\Users\\vanes\\Source\\Repos\\SOCPACxASU\\DashboardApp\\DashboardApp.csproj",
         "packagesPath": "C:\\Users\\vanes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vanes\\source\\repos\\DashboardService\\DashboardApp\\obj\\",
+        "outputPath": "C:\\Users\\vanes\\Source\\Repos\\SOCPACxASU\\DashboardApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vanes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,38 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.9.1, )"
+            },
+            "Grpc.Net.ClientFactory": {
+              "target": "Package",
+              "version": "[2.23.2, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.23.0, )"
+            },
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

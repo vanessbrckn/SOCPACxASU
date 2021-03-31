@@ -14,7 +14,7 @@ namespace DashboardService
     {
 
         [OperationContract]
-        string GetData(int value);
+        string GetData(int lat, int longitude);
 
     }
 
