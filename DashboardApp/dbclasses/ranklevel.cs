@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Data;
+using System.Configuration;
+using Dapper;
 
 namespace DashboardApp.dbclasses
 {
-    class ranklevel
+    public class ranklevel
     {
         public string bid { get; set; }
         public string insMark { get; set; }

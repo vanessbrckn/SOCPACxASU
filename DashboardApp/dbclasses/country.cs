@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DashboardApp.dbclasses
 {
-    class country
+    public class country
     {
         public string documents { get; set; }
         public string name { get; set; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DashboardApp.dbclasses
 {
-    class crew
+    public class crew
     {
         public float hoursSlept { get; set; }
         public float hoursWorked { get; set; }

@@ -8,11 +8,13 @@
     ".NETCoreApp,Version=v3.1": {
       "DashboardApp/1.0.0": {
         "dependencies": {
+          "Dapper": "2.0.78",
           "Geolocation": "1.2.1",
           "Google.Protobuf": "3.9.1",
           "GoogleMapsClient": "1.0.1",
           "Grpc.Net.ClientFactory": "2.23.2",
           "Grpc.Tools": "2.23.0",
+          "Microsoft.Extensions.ApiDescription.Client": "3.0.0",
           "NSwag.ApiDescription.Client": "13.0.5",
           "System.ServiceModel.Duplex": "4.4.4",
           "System.ServiceModel.Http": "4.4.4",
@@ -21,6 +23,17 @@
         },
         "runtime": {
           "DashboardApp.dll": {}
+        }
+      },
+      "Dapper/2.0.78": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.78.45418"
+          }
         }
       },
       "Geolocation/1.2.1": {
@@ -103,7 +116,7 @@
         }
       },
       "Grpc.Tools/2.23.0": {},
-      "Microsoft.Extensions.ApiDescription.Client/0.3.0-preview7.19365.7": {},
+      "Microsoft.Extensions.ApiDescription.Client/3.0.0": {},
       "Microsoft.Extensions.Configuration/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "2.1.1"
@@ -215,7 +228,7 @@
       },
       "NSwag.ApiDescription.Client/13.0.5": {
         "dependencies": {
-          "Microsoft.Extensions.ApiDescription.Client": "0.3.0-preview7.19365.7",
+          "Microsoft.Extensions.ApiDescription.Client": "3.0.0",
           "NSwag.MSBuild": "13.0.5"
         }
       },
@@ -261,6 +274,7 @@
         }
       },
       "System.Reflection.DispatchProxy/4.4.0": {},
+      "System.Reflection.Emit.Lightweight/4.7.0": {},
       "System.Runtime.CompilerServices.Unsafe/4.5.1": {},
       "System.Security.Principal.Windows/4.4.0": {
         "dependencies": {
@@ -338,6 +352,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Dapper/2.0.78": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vLPwL2HZXp/DN17Eu7sg6GMEj02alq7jcy6atn5Gv8i96b9Hu1UoxlCrhInUPfSFLQQiD8O7pdWAE1fdUEO/1Q==",
+      "path": "dapper/2.0.78",
+      "hashPath": "dapper.2.0.78.nupkg.sha512"
+    },
     "Geolocation/1.2.1": {
       "type": "package",
       "serviceable": true,
@@ -394,12 +415,12 @@
       "path": "grpc.tools/2.23.0",
       "hashPath": "grpc.tools.2.23.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.ApiDescription.Client/0.3.0-preview7.19365.7": {
+    "Microsoft.Extensions.ApiDescription.Client/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nPMnqfOkUkPx+0CVjHs+EFY/yHoGjNgpPUbl08lec+1wmISCeVBVOlEiqXIyUhKQMQW6Ikc6E04TZJzK4beQ5Q==",
-      "path": "microsoft.extensions.apidescription.client/0.3.0-preview7.19365.7",
-      "hashPath": "microsoft.extensions.apidescription.client.0.3.0-preview7.19365.7.nupkg.sha512"
+      "sha512": "sha512-EpGGEoBelJtt4IN32O02D+Lb4DjSFB1GUoItLa8GDzM4x/cqpCAKn5tRb6Fn7U3/rGlWjfLMGXW/t9zvYmPQtA==",
+      "path": "microsoft.extensions.apidescription.client/3.0.0",
+      "hashPath": "microsoft.extensions.apidescription.client.3.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/2.1.1": {
       "type": "package",
@@ -526,6 +547,13 @@
       "sha512": "sha512-xK6JE0mpsBD+T0qu3V6dmVRa06PxAvIIM/zSjouqP7Sk6X+FQj+9XFRz9GmZk9aJGMU1LX6AgTZIlsYZ64QKsw==",
       "path": "system.reflection.dispatchproxy/4.4.0",
       "hashPath": "system.reflection.dispatchproxy.4.4.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit.Lightweight/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a4OLB4IITxAXJeV74MDx49Oq2+PsF6Sml54XAFv+2RyWwtDBcabzoxiiJRhdhx+gaohLh4hEGCLQyBozXoQPqA==",
+      "path": "system.reflection.emit.lightweight/4.7.0",
+      "hashPath": "system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/4.5.1": {
       "type": "package",

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DashboardApp.dbclasses
 {
-    class location
+    public class location
     {
         public double coordinates { get; set; }
         public string countryName { get; set; }

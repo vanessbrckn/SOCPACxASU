@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DashboardApp.dbclasses
 {
-    class Class1
+    class plane
     {
         public int capacity { get; set; }
         public int cew_size { get; set; }

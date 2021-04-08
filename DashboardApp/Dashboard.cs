@@ -41,7 +41,7 @@ namespace DashboardApp
             latLbl.Text = addr.State.ToString();
             longLbl.Text = addr.Longitude.ToString();
 
-            
+            //need to find an API that returns coordinates to search with in DB
 
             
             
