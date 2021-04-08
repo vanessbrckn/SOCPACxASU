@@ -30,8 +30,6 @@
         {
             this.credLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.longTxt = new System.Windows.Forms.TextBox();
-            this.latTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.countryTxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +41,11 @@
             this.nameTxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.submitBtn = new System.Windows.Forms.Button();
+            this.latLbl = new System.Windows.Forms.Label();
+            this.longLbl = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cityLbl = new System.Windows.Forms.Label();
+            this.cityTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // credLbl
@@ -65,20 +68,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Name:";
             // 
-            // longTxt
-            // 
-            this.longTxt.Location = new System.Drawing.Point(259, 376);
-            this.longTxt.Name = "longTxt";
-            this.longTxt.Size = new System.Drawing.Size(270, 23);
-            this.longTxt.TabIndex = 7;
-            // 
-            // latTxt
-            // 
-            this.latTxt.Location = new System.Drawing.Point(259, 331);
-            this.latTxt.Name = "latTxt";
-            this.latTxt.Size = new System.Drawing.Size(270, 23);
-            this.latTxt.TabIndex = 6;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -93,7 +82,7 @@
             // 
             this.countryTxt.Location = new System.Drawing.Point(259, 281);
             this.countryTxt.Name = "countryTxt";
-            this.countryTxt.Size = new System.Drawing.Size(270, 23);
+            this.countryTxt.Size = new System.Drawing.Size(100, 23);
             this.countryTxt.TabIndex = 5;
             // 
             // label3
@@ -177,11 +166,61 @@
             this.submitBtn.UseVisualStyleBackColor = true;
             this.submitBtn.Click += new System.EventHandler(this.submitBtn_Click);
             // 
+            // latLbl
+            // 
+            this.latLbl.AutoSize = true;
+            this.latLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.latLbl.Location = new System.Drawing.Point(268, 334);
+            this.latLbl.Name = "latLbl";
+            this.latLbl.Size = new System.Drawing.Size(27, 19);
+            this.latLbl.TabIndex = 9;
+            this.latLbl.Text = "lat";
+            // 
+            // longLbl
+            // 
+            this.longLbl.AutoSize = true;
+            this.longLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.longLbl.Location = new System.Drawing.Point(268, 380);
+            this.longLbl.Name = "longLbl";
+            this.longLbl.Size = new System.Drawing.Size(43, 19);
+            this.longLbl.TabIndex = 9;
+            this.longLbl.Text = "long";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(380, 275);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 15);
+            this.label8.TabIndex = 10;
+            // 
+            // cityLbl
+            // 
+            this.cityLbl.AutoSize = true;
+            this.cityLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cityLbl.Location = new System.Drawing.Point(386, 281);
+            this.cityLbl.Name = "cityLbl";
+            this.cityLbl.Size = new System.Drawing.Size(39, 18);
+            this.cityLbl.TabIndex = 1;
+            this.cityLbl.Text = "City:";
+            // 
+            // cityTxt
+            // 
+            this.cityTxt.Location = new System.Drawing.Point(441, 281);
+            this.cityTxt.Name = "cityTxt";
+            this.cityTxt.Size = new System.Drawing.Size(100, 23);
+            this.cityTxt.TabIndex = 5;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cityTxt);
+            this.Controls.Add(this.cityLbl);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.longLbl);
+            this.Controls.Add(this.latLbl);
             this.Controls.Add(this.submitBtn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.nameTxt);
@@ -193,8 +232,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.countryTxt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.latTxt);
-            this.Controls.Add(this.longTxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.credLbl);
             this.Name = "Dashboard";
@@ -208,8 +245,6 @@
 
         private System.Windows.Forms.Label credLbl;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox longTxt;
-        private System.Windows.Forms.TextBox latTxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox countryTxt;
         private System.Windows.Forms.Label label3;
@@ -221,6 +256,11 @@
         private System.Windows.Forms.TextBox nameTxt;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button submitBtn;
+        private System.Windows.Forms.Label latLbl;
+        private System.Windows.Forms.Label longLbl;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label cityLbl;
+        private System.Windows.Forms.TextBox cityTxt;
     }
 }
 
