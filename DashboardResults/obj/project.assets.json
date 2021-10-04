@@ -1574,19 +1574,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vanes\\.nuget\\packages\\": {}
+    "C:\\Users\\Vanessa.Bracken\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vanes\\Source\\Repos\\SOCPACxASU\\DashboardResults\\DashboardResults.csproj",
+      "projectUniqueName": "C:\\Users\\Vanessa.Bracken\\Source\\Repos\\SOCPACxASU\\DashboardResults\\DashboardResults.csproj",
       "projectName": "DashboardResults",
-      "projectPath": "C:\\Users\\vanes\\Source\\Repos\\SOCPACxASU\\DashboardResults\\DashboardResults.csproj",
-      "packagesPath": "C:\\Users\\vanes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vanes\\Source\\Repos\\SOCPACxASU\\DashboardResults\\obj\\",
+      "projectPath": "C:\\Users\\Vanessa.Bracken\\Source\\Repos\\SOCPACxASU\\DashboardResults\\DashboardResults.csproj",
+      "packagesPath": "C:\\Users\\Vanessa.Bracken\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vanessa.Bracken\\Source\\Repos\\SOCPACxASU\\DashboardResults\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\vanes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vanessa.Bracken\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1598,9 +1603,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\vanes\\Source\\Repos\\SOCPACxASU\\DashboardApp\\DashboardApp.csproj": {
-              "projectPath": "C:\\Users\\vanes\\Source\\Repos\\SOCPACxASU\\DashboardApp\\DashboardApp.csproj"
+            "C:\\Users\\Vanessa.Bracken\\Source\\Repos\\SOCPACxASU\\DashboardApp\\DashboardApp.csproj": {
+              "projectPath": "C:\\Users\\Vanessa.Bracken\\Source\\Repos\\SOCPACxASU\\DashboardApp\\DashboardApp.csproj"
             }
           }
         }
@@ -1613,6 +1619,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -1631,7 +1638,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

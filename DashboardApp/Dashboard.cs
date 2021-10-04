@@ -30,6 +30,9 @@ namespace DashboardApp
             string targetCountry = countryTxt.Text;
             string targetCity = cityLbl.Text;
 
+            //here is the connection string for our DB 
+            //Database={your_database}; Data Source=socpacxasu.mysql.database.azure.com; User Id=capstoneAdmin@socpacxasu; Password={your_password}
+
             Address addr = client.QueryAddress($"{targetCity} {targetCountry}");
 
 
