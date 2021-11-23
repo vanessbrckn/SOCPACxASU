@@ -1,3 +1,4 @@
+import mainQuestions
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import QtGui
@@ -31,14 +32,14 @@ def planeQuery(locationID):
         "WHERE p.location="+str(locationID)+";"
 
     cursor = db.cursor()
-    cursor.execute(planequery);
+    cursor.execute(planequery)
     records = cursor.fetchall()
-    rows = "plane ID\tModelNumber\n"
+    plane = []
 
     for row in records:
-        rows += str(row[0]) + "\t\t\t" + str(row[1]) + "\n"
+        plane.append(row[1:3])
 
-    return records
+    return plane
 
 def threatLevel(locationID):
 
@@ -93,12 +94,13 @@ loc = locationQuery(34.946222,69.264639)
 print("Location ID of hardcoded lat and long, we will get from map:")
 print(loc[0])
 print("plane specs from queried location:")
+print("(Model number, type)")
 planes = planeQuery(loc[0])
 print(planes)
-print("threat Level, which is also the firepower of plane, we may not alway need this spec, honestly:")
-tlevel = threatLevel(loc[0])
-print(tlevel[0][0])
-print("this is the plane's spec that can handle the \"threat level\":")
-print(appropriatePlane(planes, tlevel[0][0]))
+#print("threat Level, which is also the firepower of plane, we may not alway need this spec, honestly:")
+#tlevel = threatLevel(loc[0])
+#print(tlevel[0][0])
+#print("this is the plane's spec that can handle the \"threat level\":")
+#print(appropriatePlane(planes, tlevel[0][0]))
 
 
