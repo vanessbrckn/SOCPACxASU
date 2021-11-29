@@ -82,6 +82,21 @@ def crewQueryLicense(planes, locationID):
 def crewQuery(locationID):
 
     cquery = "SELECT c.pid FROM "+sqlDBname+".crew c WHERE c.location ="+locationID+";"
+    cursor = db.cursor()
+    cursor.execute(cquery)
+    crew = cursor.fetchall()
+
+    return crew
+
+def approverQuery(locationID):
+
+    aquery = "SELECT c.name, r.bid, r.title FROM "+sqlDBname+".personnel p, "+sqlDBname+".crew c, "+sqlDBname+".RankLevel r " \
+                "WHERE p.pid ="+str(locationID)+" AND c.location = "+str(locationID)+" AND r.rank_level = p.rid;"
+    cursor = db.cursor()
+    cursor.execute(aquery)
+    approver = cursor.fetchall()
+
+    return approver
 
 #This will determine if the plane selected for the mission can house where it's going
 #I dont know how to do this yet...
@@ -93,10 +108,13 @@ def crewQuery(locationID):
 loc = locationQuery(34.946222,69.264639)
 print("Location ID of hardcoded lat and long, we will get from map:")
 print(loc[0])
-print("plane specs from queried location:")
+print("\nplane specs from queried location:")
 print("(Model number, type)")
 planes = planeQuery(loc[0])
 print(planes)
+approver= approverQuery(loc[0])
+print("\nPersonnel at base, \n(name, branch, title)")
+print(approver)
 #print("threat Level, which is also the firepower of plane, we may not alway need this spec, honestly:")
 #tlevel = threatLevel(loc[0])
 #print(tlevel[0][0])
