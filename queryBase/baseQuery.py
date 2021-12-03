@@ -98,6 +98,26 @@ def approverQuery(locationID):
 
     return approver
 
+def personnelCount(locationID):
+    cquery = "SELECT COUNT(c.pid) FROM " + sqlDBname + ".crew c WHERE c.location =" + str(locationID) + ";"
+    cursor = db.cursor()
+    cursor.execute(cquery)
+    count = cursor.fetchall()
+
+    return count
+
+def planeCount(locationID):
+    planequery = "SELECT COUNT(p.planeID) FROM " + sqlDBname + ".plane p " \
+                                                "WHERE p.location=" + str(locationID) + ";"
+
+    cursor = db.cursor()
+    cursor.execute(planequery)
+    count = cursor.fetchall()
+
+    return count
+
+
+
 #This will determine if the plane selected for the mission can house where it's going
 #I dont know how to do this yet...
 #def airportSizeTest(pane):
@@ -108,6 +128,8 @@ def approverQuery(locationID):
 loc = locationQuery(34.946222,69.264639)
 print("Location ID of hardcoded lat and long, we will get from map:")
 print(loc[0])
+print("plane count:")
+print(planeCount(loc[0]))
 print("\nplane specs from queried location:")
 print("(Model number, type)")
 planes = planeQuery(loc[0])
@@ -115,6 +137,8 @@ print(planes)
 approver= approverQuery(loc[0])
 print("\nPersonnel at base, \n(name, branch, title)")
 print(approver)
+print('personnel count:')
+print(personnelCount(loc[0]))
 #print("threat Level, which is also the firepower of plane, we may not alway need this spec, honestly:")
 #tlevel = threatLevel(loc[0])
 #print(tlevel[0][0])
